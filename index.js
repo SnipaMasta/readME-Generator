@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const fs = require('fs');
 // TODO: Create an array of questions for user input
 
-const generateReadMe = ({ title, description, installation, usage, license, contribution, test, github, email }) =>
+const generateReadMe = ({ title, description, installation, usage, license, contribution, test, github, githublink, email }) =>
     `# ${title}
 
     ## Description
@@ -11,7 +11,17 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
    ${description}
     
     ## Installation
-    
+
+    ## Table of Contents (Optional)
+
+    - [Installation](#installation)
+    - [Usage](#usage)
+    - [Credits](#credits)
+    - [Tests](#tests)
+    - [How To Contribute](#contribution)
+    - [Questions](#questions)
+    - [License](#license)
+
     ${installation}
     
     ## Usage
@@ -33,8 +43,9 @@ const generateReadMe = ({ title, description, installation, usage, license, cont
 
     ## Questions
 
-    ${github}
-    ${email}
+    My github username is: ${github}, and the link to my github page is: ${githublink}
+
+    My email for questions is: ${email}
     
     ## Tests
     
@@ -79,6 +90,11 @@ const questions =
                 type: 'input',
                 message: 'What is your github username?',
                 name: 'github',
+            },
+            {
+                type: 'input',
+                message: 'What is your github link?',
+                name: 'githublink',
             },
             {
                 type: 'input',
