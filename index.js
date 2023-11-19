@@ -2,6 +2,45 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
 // TODO: Create an array of questions for user input
+
+const generateReadMe = ({ title, description, installation, usage, license, contribution, test, github, email }) =>
+    `# ${title}
+
+    ## Description
+    
+   ${description}
+    
+    ## Installation
+    
+    ${installation}
+    
+    ## Usage
+    
+    ${usage}
+    
+    ## License
+
+    
+    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+    
+    ## Features
+    
+    If your project has a lot of features, list them here.
+    
+    ## How to Contribute
+
+    ${contribution}
+
+    ## Questions
+
+    ${github}
+    ${email}
+    
+    ## Tests
+    
+    ${test}`;
+
+
 const questions =
 
     inquirer
@@ -58,50 +97,17 @@ const questions =
                     'None'
                 ]
             },
-        ]);
+        ])
+        .then((answers) => {
+            const readmeContent = generateReadMe(answers);
+            fs.writeFile('readME.md', readmeContent, (err) =>
+                err ? console.log(err) : console.log('Successfully generated your readME!')
+            );
 
+        })
 
-const generateReadMe = ({ title, description, installation, usage, license, contribution, test, github, email }) =>
-    `# ${title}
-
-    ## Description
-    
-   ${description}
-    
-    ## Installation
-    
-    ${installation}
-    
-    ## Usage
-    
-    ${usage}
-    
-    ## License
-
-    
-    🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
-    
-    ## Features
-    
-    If your project has a lot of features, list them here.
-    
-    ## How to Contribute
-
-    ${contribution}
-
-    ## Questions
-
-    ${github}
-    ${email}
-    
-    ## Tests
-    
-    ${test}`;
 
 // TODO: Create a function to write README file
-fs.writeFile('readME.md', data, (err) =>
-    err ? console.log(err) : console.log('Successfully generated your readME!')
-);
 
 
 
