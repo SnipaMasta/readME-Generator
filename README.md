@@ -13,7 +13,7 @@ Often, having to write a readME for a project is both time consuming and annoyin
 - [How To Contribute](#contribution)
 - [Questions](#questions)
 - [License](#license)
-  
+
 ## Installation
 
 To use the application, you must have a code editor installed to your system such as VSCode. Additionally, you will need to install Node.js as well. 
