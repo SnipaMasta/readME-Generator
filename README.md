@@ -20,7 +20,12 @@ To use the application, you must have a code editor installed to your system suc
 
 ## Usage
 
-The tutorial video is below: 
+The tutorial video is below:
+
+
+https://github.com/SnipaMasta/readME-Generator/assets/144749848/5bbb6d0a-c253-484d-ae82-adba298214f6
+
+
 
 ## License
 
