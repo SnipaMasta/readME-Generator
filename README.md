@@ -10,7 +10,7 @@ Often, having to write a readME for a project is both time consuming and annoyin
 - [Usage](#usage)
 - [Credits](#credits)
 - [Tests](#tests)
-- [How To Contribute](#howtocontribute)
+- [How To Contribute](#How-To-Contribute)
 - [License](#license)
 
 ## Installation
