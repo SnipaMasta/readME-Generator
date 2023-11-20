@@ -19,9 +19,7 @@ Often, having to write a readME for a project is both time consuming and annoyin
 To use the application, you must have a code editor installed to your system such as VSCode. Additionally, you will need to install Node.js as well. 
 
 ## Usage
-
-The tutorial video is below:
-
+Simply type "node index.js" into the terminal and away you go! Answer the questions as prompted to generate your readME! If you need any additional assistance, there is a tutorial video below!
 
 https://github.com/SnipaMasta/readME-Generator/assets/144749848/5bbb6d0a-c253-484d-ae82-adba298214f6
 
