@@ -11,7 +11,6 @@ Often, having to write a readME for a project is both time consuming and annoyin
 - [Credits](#credits)
 - [Tests](#tests)
 - [How To Contribute](#contribution)
-- [Questions](#questions)
 - [License](#license)
 
 ## Installation
@@ -29,7 +28,7 @@ https://github.com/SnipaMasta/readME-Generator/assets/144749848/5bbb6d0a-c253-48
 
 MIT License
 
-## How to Contribute
+## How To Contribute
 
 Feel free to contribute to the project in anyway you see fit! I'm a firm believer that nothing is ever truly perfect. As a result, definitely open up an issue or pull request if you see something that needs addressing!
 
